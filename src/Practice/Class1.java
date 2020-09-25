@@ -14,8 +14,8 @@ public class Class1 {
 		//array_avg();
 		//sort_int_array();
 		//sort_string_array();
-		//find_int_from_array();
-		find_string_from_array();
+		find_int_from_array_atIndex();
+		//find_string_from_array();
 	}
 	public static void swipe_No() {
 		int a=4; int b=7;
@@ -31,6 +31,10 @@ public class Class1 {
 			rev=rev+s.charAt(i);
 		}
 		System.out.println(rev);
+	}
+	public static void reverse_int() {
+		int n= 1234567;
+		
 	}
 	public static void reverse_string_stringbuffer() {
 		String s= "Ambrish"; 
@@ -97,13 +101,13 @@ public class Class1 {
 			System.out.print(n+", ");				//remove brackets
 		}
 	}
-	public static void find_int_from_array() {
+	public static void find_int_from_array_atIndex() {
 		int arr []= {2,3,50,5,6,8,7,9,10};
-		int s_no= 7;
-		for (int i=0;i<=arr.length; i++) { 			// or write for(int i :arr)
-			if (i==s_no)
+		int s_no=6 ;
+		for (int i=0;i<arr.length; i++) { 			// or write for(int i :arr)
+			if (arr[i]==s_no)
 			{
-				System.out.println("matching number : " +s_no);
+				System.out.println("matching number : " +s_no+" at index :"+i); 	//need to add index also
 			}
 		}
 	}
@@ -118,5 +122,6 @@ public class Class1 {
 			}
 		}
 	}
+	
 	
 }
