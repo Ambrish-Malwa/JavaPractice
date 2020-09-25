@@ -7,14 +7,16 @@ public class Class1 {
 	public static void main(String[] args) {
 		//swipe_No();
 		//reverse_string();
+		//reverse_int();
 		//reverse_string_stringbuffer();
 		//palindrome();
 		//remove_spaces();
-		//string_count();			//do it 
+		//string_count();						//not completed 
+		reverse_int_in_array();					////not completed 
 		//array_avg();
 		//sort_int_array();
 		//sort_string_array();
-		find_int_from_array_atIndex();
+		//find_int_from_array_atIndex();
 		//find_string_from_array();
 	}
 	public static void swipe_No() {
@@ -33,8 +35,13 @@ public class Class1 {
 		System.out.println(rev);
 	}
 	public static void reverse_int() {
-		int n= 1234567;
-		
+		int n= 1234;int rev=0;
+		while(n!=0) {
+			int a= n%10;
+			rev=rev*10+a;
+			n=n/10;
+		}		
+		System.out.println(rev);
 	}
 	public static void reverse_string_stringbuffer() {
 		String s= "Ambrish"; 
@@ -73,6 +80,9 @@ public class Class1 {
 			}
 		}
 	}
+	public static void reverse_int_in_array() {	
+		//next in line
+	}
 	public static void array_avg() {
 		int [] arr= {2,4,5,6,7,8,9,5};
 		int sum=0;
@@ -107,7 +117,7 @@ public class Class1 {
 		for (int i=0;i<arr.length; i++) { 			// or write for(int i :arr)
 			if (arr[i]==s_no)
 			{
-				System.out.println("matching number : " +s_no+" at index :"+i); 	//need to add index also
+				System.out.println("matching number : " +s_no+" at index :"+i); 
 			}
 		}
 	}
