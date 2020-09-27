@@ -12,12 +12,14 @@ public class Class1 {
 		//palindrome();
 		//remove_spaces();
 		//string_count();						//not completed 
-		reverse_int_in_array();					////not completed 
+		//reverse_int_in_array();					////not completed 
 		//array_avg();
 		//sort_int_array();
 		//sort_string_array();
 		//find_int_from_array_atIndex();
 		//find_string_from_array();
+		//duplicate_num_Array();
+		duplicate_string_Array();
 	}
 	public static void swipe_No() {
 		int a=4; int b=7;
@@ -121,7 +123,7 @@ public class Class1 {
 			}
 		}
 	}
-	
+
 	public static void find_string_from_array() {
 		String [] arr= {"tata", "ba", "bi", "be", "hello"};
 		String s1="ba";
@@ -132,6 +134,26 @@ public class Class1 {
 			}
 		}
 	}
-	
-	
+	static void duplicate_num_Array() {
+		int arr []= {1,2,3,5,20,4,55,65,2,58,99};
+		for (int i=0; i<arr.length;i++) {
+			for (int j=i+1;j<arr.length;j++) {
+				if(arr[i]==(arr[j])) {
+					System.out.println("duplicate number found : "+ arr[i]+" , at index  "+i+ " and " +j);
+				}
+			}
+		}
+	}
+	static void duplicate_string_Array() {
+		String arr []= {"tata", "ba", "by", "be", "hello","be", "bye" };
+		for (int i=0; i<arr.length;i++) {
+			for (int j=i+1;j<arr.length;j++) {
+				if(arr[i].contentEquals(arr[j])) {			
+					System.out.println("duplicate number found : "+ arr[i]+" , at index  "+i+ " and " +j);
+				}
+			}
+		}
+	}
+
+
 }
